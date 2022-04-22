@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="Control.js"></script>
+  </head>
+  <body>
+    <div class="Crud">
+      <div class="head">
+        <h1>CRUDS</h1>
+        <p>Product Managment system</p>
+      </div>
+      <div class="input">
+        <input placeholder="Title" type="text" id="title" />
+        <div class="price">
+          <input placeholder="Price" type="number" id="price" />
+          <input placeholder="Tax" type="number" id="tax" />
+          <input placeholder="Ad" type="number" id="ad" />
+          <input placeholder="Discount" type="number" id="discount" />
+          <small id="Total"></small>
+        </div>
+        <input placeholder="Count" type="number" id="count" />
+        <input placeholder="Category" type="text" id="category" />
+        <button id="submit">Create</button>
+      </div>
+      <div class="output">
+        <div class="searchBox">
+          <input placeholder="Search" type="text" id="search" />
+        </div>
+        <div class="btnSearch">
+          <button id="searchTitle">Search by Title</button>
+          <button id="searchCategory">Search by Catgeory</button>
+        </div>
+        <button class="DeletAll hidden">Delet All</button>
+        <!--<div id="bigDelet"></div>-->
+        <table>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>Total</th>
+            <th>category</th>
+            <th>udpate</th>
+            <th>delete</th>
+          </tr>
+
+          <tbody id="tableBody">
+            <!--<tr>
+              <td>1</td>
+              <td>samsung</td>
+              <td>2000</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>2100</td>
+              <td>phone</td>
+              <td><button id="update">update</button></td>
+              <td><button id="delete">delete</button></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>samsung</td>
+              <td>2000</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>2100</td>
+              <td>phone</td>
+              <td><button id="update">update</button></td>
+              <td><button id="delete">delete</button></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>samsung</td>
+              <td>2000</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>2100</td>
+              <td>phone</td>
+              <td><button id="update">update</button></td>
+              <td><button id="delete">delete</button></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>samsung</td>
+              <td>2000</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>2100</td>
+              <td>phone</td>
+              <td><button id="update">update</button></td>
+              <td><button id="delete">delete</button></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
